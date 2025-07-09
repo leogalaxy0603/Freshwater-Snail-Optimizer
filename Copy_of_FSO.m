@@ -1,8 +1,8 @@
-function [bestSolution, bestFitness] = snail_optimize(func, dim, lb, ub, maxIter, popSize)
+function [bestSolution, bestFitness] = FSO(func, dim, lb, ub, maxIter, popSize)
 % Freshwater Snail Optimizer
 % This function implements single-objective continuous optimization based on the behavior pattern of freshwater snails moving in water flow.
 % Calling format:
-% [bestSolution, bestFitness] = snail_optimize(func, dim, lb, ub, maxIter, popSize)
+% [bestSolution, bestFitness] = FSO(func, dim, lb, ub, maxIter, popSize)
 % Parameters:
 % func - objective function handle (@function name) or function name string. The objective function should accept a 1×dim vector input and return a scalar fitness value (the smaller the better).
 % dim - the dimension of the problem (the number of decision variables).
